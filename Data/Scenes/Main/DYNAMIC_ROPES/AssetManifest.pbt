@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13404256004014730283
-  Name: "Animated Neon Sign - Boba"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_NeonSign_Boba"
-  }
-}
-Assets {
   Id: 7213474027697530376
   Name: "Cylinder"
   PlatformAssetType: 1

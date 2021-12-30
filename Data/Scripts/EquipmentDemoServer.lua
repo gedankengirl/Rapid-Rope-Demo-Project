@@ -8,7 +8,7 @@ local _ = TRIGGER.interactedEvent:Connect(function(trigger, player)
     TRIGGER.isInteractable = false
     ---@type Player
     local p = player
-    Task.Spawn(function() TRIGGER.isInteractable = true end, 5)
+    Task.Spawn(function() TRIGGER.isInteractable = true end, 3.0)
     local newEquipment = World.SpawnAsset(EQUIPMENT_MUID, {
         position = p:GetWorldPosition() + Vector3.UP * 300
     })

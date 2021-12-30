@@ -1,10 +1,11 @@
 Assets {
   Id: 14300904493899535112
-  Name: "RapidRopeDemoServer"
+  Name: "EquipmentDemoServer"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
     }
   }
   SerializationVersion: 103
+  VirtualFolderPath: "RapidRopeDemo"
 }

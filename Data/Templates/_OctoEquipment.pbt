@@ -31,7 +31,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Equipment {
-          SocketName: "upper_spine"
+          SocketName: "right_prop"
           PickupTrigger {
             SelfId: 841534158063459245
           }
@@ -142,22 +142,12 @@ Assets {
         ParentId: 2891858981621866397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
               X: 30
+              Y: 10
+              Z: 50
             }
-          }
-          Overrides {
-            Name: "cs:Damping"
-            Float: 0.01
           }
           Overrides {
             Name: "cs:SegmentCount"
@@ -198,18 +188,6 @@ Assets {
             Float: 150
           }
           Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomColor"
             Color {
               R: 0.0496687889
@@ -224,6 +202,22 @@ Assets {
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.1
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 0.01
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -265,22 +259,12 @@ Assets {
         ParentId: 2891858981621866397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
               X: -30
+              Y: 20
+              Z: 45
             }
-          }
-          Overrides {
-            Name: "cs:Damping"
-            Float: 0.01
           }
           Overrides {
             Name: "cs:SegmentCount"
@@ -321,18 +305,6 @@ Assets {
             Float: 150
           }
           Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomColor"
             Color {
               R: 0.0496687889
@@ -347,6 +319,22 @@ Assets {
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.1
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 0.01
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -388,22 +376,12 @@ Assets {
         ParentId: 2891858981621866397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
               X: 60
+              Y: 30
+              Z: 40
             }
-          }
-          Overrides {
-            Name: "cs:Damping"
-            Float: 0.01
           }
           Overrides {
             Name: "cs:SegmentCount"
@@ -444,18 +422,6 @@ Assets {
             Float: 150
           }
           Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomColor"
             Color {
               R: 0.0496687889
@@ -470,6 +436,22 @@ Assets {
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.1
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 0.01
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -511,22 +493,12 @@ Assets {
         ParentId: 2891858981621866397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
               X: -60
+              Y: 20
+              Z: 35
             }
-          }
-          Overrides {
-            Name: "cs:Damping"
-            Float: 0.01
           }
           Overrides {
             Name: "cs:SegmentCount"
@@ -567,18 +539,6 @@ Assets {
             Float: 150
           }
           Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomColor"
             Color {
               R: 0.0496687889
@@ -593,6 +553,22 @@ Assets {
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.1
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 0.01
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -634,22 +610,12 @@ Assets {
         ParentId: 2891858981621866397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
               X: 90
+              Y: 10
+              Z: 30
             }
-          }
-          Overrides {
-            Name: "cs:Damping"
-            Float: 0.01
           }
           Overrides {
             Name: "cs:SegmentCount"
@@ -690,18 +656,6 @@ Assets {
             Float: 150
           }
           Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomColor"
             Color {
               R: 0.0496687889
@@ -716,6 +670,22 @@ Assets {
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.1
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 0.01
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -757,22 +727,12 @@ Assets {
         ParentId: 2891858981621866397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
               X: -90
+              Y: -10
+              Z: 25
             }
-          }
-          Overrides {
-            Name: "cs:Damping"
-            Float: 0.01
           }
           Overrides {
             Name: "cs:SegmentCount"
@@ -813,18 +773,6 @@ Assets {
             Float: 150
           }
           Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomColor"
             Color {
               R: 0.0496687889
@@ -839,6 +787,22 @@ Assets {
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.1
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 0.01
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -880,22 +844,12 @@ Assets {
         ParentId: 2891858981621866397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
-              X: 120
+              X: 90
+              Y: -20
+              Z: 20
             }
-          }
-          Overrides {
-            Name: "cs:Damping"
-            Float: 0.01
           }
           Overrides {
             Name: "cs:SegmentCount"
@@ -936,18 +890,6 @@ Assets {
             Float: 150
           }
           Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomColor"
             Color {
               R: 0.0496687889
@@ -962,6 +904,22 @@ Assets {
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.1
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 0.01
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -1003,22 +961,12 @@ Assets {
         ParentId: 2891858981621866397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
-              X: -120
+              X: 100
+              Y: 10
+              Z: 15
             }
-          }
-          Overrides {
-            Name: "cs:Damping"
-            Float: 0.01
           }
           Overrides {
             Name: "cs:SegmentCount"
@@ -1059,18 +1007,6 @@ Assets {
             Float: 150
           }
           Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomColor"
             Color {
               R: 0.0496687889
@@ -1085,6 +1021,22 @@ Assets {
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.1
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 60
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 0.01
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -1710,7 +1662,7 @@ Assets {
       }
       Objects {
         Id: 10042363388849880343
-        Name: "RapidRope"
+        Name: "RapidRopeString"
         Transform {
           Location {
           }
@@ -1739,7 +1691,7 @@ Assets {
           }
           Overrides {
             Name: "cs:RopeLength"
-            Float: 450
+            Float: 500
           }
           Overrides {
             Name: "cs:CustomColor"
@@ -1750,43 +1702,18 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:Move"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:CustomizeColor"
             Bool: true
-          }
-          Overrides {
-            Name: "cs:Stiffness"
-            Float: 60
           }
           Overrides {
             Name: "cs:MaxStretchFactor"
             Float: 1.5
           }
           Overrides {
-            Name: "cs:Damping"
-            Float: 5
-          }
-          Overrides {
             Name: "cs:OutsideForce"
             Vector {
-              X: -100
               Z: 1500
             }
-          }
-          Overrides {
-            Name: "cs:Rotate"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:RotationInertia"
-            Float: 5
-          }
-          Overrides {
-            Name: "cs:RotationDamping"
-            Float: 20
           }
           Overrides {
             Name: "cs:CustomMaterial"
@@ -1797,6 +1724,30 @@ Assets {
           Overrides {
             Name: "cs:RopeThickness"
             Float: 2.5
+          }
+          Overrides {
+            Name: "cs:AngularDamping"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:RopeStiffness"
+            Float: 30
+          }
+          Overrides {
+            Name: "cs:LinearDamping"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:EnableMovement"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:RopeBendAmount"
+            Float: 1.5
+          }
+          Overrides {
+            Name: "cs:DisableAngularMovement"
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -1836,7 +1787,6 @@ Assets {
           }
         }
         ParentId: 4787696047779764581
-        ChildIds: 5294012972606524359
         ChildIds: 15077989371166282058
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1858,67 +1808,6 @@ Assets {
         }
       }
       Objects {
-        Id: 5294012972606524359
-        Name: "Animated Neon Sign - Boba"
-        Transform {
-          Location {
-            X: -16.2862549
-            Y: -5.14539337
-            Z: 115.812073
-          }
-          Rotation {
-            Pitch: -14.9118347
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3123726293348688334
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Font_Neon:color"
-            Color {
-              R: 0.0331125259
-              G: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 13404256004014730283
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 15077989371166282058
         Name: "OctoBosyRoot"
         Transform {
@@ -1931,9 +1820,9 @@ Assets {
             Yaw: 2.3905659e-05
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 3123726293348688334
@@ -1947,9 +1836,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 5
-              G: 2.94437194
-              B: 0.149999857
+              R: 0.304635763
+              G: 2
               A: 1
             }
           }
@@ -2005,19 +1893,11 @@ Assets {
         AssetId: "Energy_Tube_Glow"
       }
     }
-    Assets {
-      Id: 13404256004014730283
-      Name: "Animated Neon Sign - Boba"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "fxsm_NeonSign_Boba"
-      }
-    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
   SerializationVersion: 103
+  VirtualFolderPath: "RapidRopeDemo"
 }

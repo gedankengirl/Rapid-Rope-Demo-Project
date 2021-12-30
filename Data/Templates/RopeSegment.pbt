@@ -30,9 +30,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 0.580397367
-              B: 0.00999999
+              R: 0.570000052
+              G: 0.412102491
+              B: 0.243390009
               A: 1
             }
           }
@@ -85,4 +85,5 @@ Assets {
     }
   }
   SerializationVersion: 103
+  VirtualFolderPath: "RapidRope"
 }

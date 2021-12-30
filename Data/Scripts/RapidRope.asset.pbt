@@ -45,9 +45,8 @@ Assets {
       Overrides {
         Name: "cs:CustomColor"
         Color {
-          R: 1
-          G: 1
-          B: 1
+          G: 0.960000038
+          B: 0.0254306048
           A: 1
         }
       }
@@ -64,15 +63,15 @@ Assets {
         Float: 1
       }
       Overrides {
-        Name: "cs:Move"
+        Name: "cs:EnableMovement"
         Bool: false
       }
       Overrides {
-        Name: "cs:Stiffness"
+        Name: "cs:RopeStiffness"
         Float: 30
       }
       Overrides {
-        Name: "cs:Damping"
+        Name: "cs:LinearDamping"
         Float: 1
       }
       Overrides {
@@ -86,16 +85,16 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:Rotate"
+        Name: "cs:DisableAngularMovement"
         Bool: false
       }
       Overrides {
-        Name: "cs:RotationInertia"
-        Float: 10
+        Name: "cs:AngularDamping"
+        Float: 20
       }
       Overrides {
-        Name: "cs:RotationDamping"
-        Float: 10
+        Name: "cs:AngularInertia"
+        Float: 5
       }
       Overrides {
         Name: "cs:RopeLength:isrep"
@@ -114,15 +113,15 @@ Assets {
         String: "Rope"
       }
       Overrides {
-        Name: "cs:Stiffness:category"
-        String: "EndLocationMovement"
+        Name: "cs:RopeStiffness:category"
+        String: "EndObjectAnimation"
       }
       Overrides {
         Name: "cs:RopeThickness:category"
         String: "Rope"
       }
       Overrides {
-        Name: "cs:Stiffness:isrep"
+        Name: "cs:RopeStiffness:isrep"
         Bool: true
       }
       Overrides {
@@ -151,7 +150,7 @@ Assets {
       }
       Overrides {
         Name: "cs:RopeBendAmount:tooltip"
-        String: "Bend amount normally in [0, 1], can be overloaded for unrealistic bend."
+        String: "1: default, 0.1:straight, 1.5:curvy. Values outside of [0.1, 1.5] will be clamped."
       }
       Overrides {
         Name: "cs:RopeBendAmount:isrep"
@@ -162,31 +161,27 @@ Assets {
         Bool: true
       }
       Overrides {
-        Name: "cs:SegmentTemplate:isrep"
-        Bool: true
+        Name: "cs:EnableMovement:category"
+        String: "EndObjectAnimation"
       }
       Overrides {
-        Name: "cs:Move:category"
-        String: "EndLocationMovement"
+        Name: "cs:DisableAngularMovement:category"
+        String: "EndObjectAnimation"
       }
       Overrides {
-        Name: "cs:Rotate:category"
-        String: "EndLocationMovement"
+        Name: "cs:AngularInertia:category"
+        String: "EndObjectAnimation"
       }
       Overrides {
-        Name: "cs:RotationInertia:category"
-        String: "EndLocationMovement"
-      }
-      Overrides {
-        Name: "cs:RotationDamping:category"
-        String: "EndLocationMovement"
+        Name: "cs:AngularDamping:category"
+        String: "EndObjectAnimation"
       }
       Overrides {
         Name: "cs:OutsideForce:category"
-        String: "EndLocationMovement"
+        String: "EndObjectAnimation"
       }
       Overrides {
-        Name: "cs:Move:isrep"
+        Name: "cs:EnableMovement:isrep"
         Bool: true
       }
       Overrides {
@@ -194,15 +189,15 @@ Assets {
         Bool: true
       }
       Overrides {
-        Name: "cs:Rotate:isrep"
+        Name: "cs:DisableAngularMovement:isrep"
         Bool: true
       }
       Overrides {
-        Name: "cs:RotationInertia:isrep"
+        Name: "cs:AngularInertia:isrep"
         Bool: true
       }
       Overrides {
-        Name: "cs:RotationDamping:isrep"
+        Name: "cs:AngularDamping:isrep"
         Bool: true
       }
       Overrides {
@@ -210,12 +205,12 @@ Assets {
         String: "Gravity(-z), Floating(+z), Wind(x,y)"
       }
       Overrides {
-        Name: "cs:Damping:isrep"
+        Name: "cs:LinearDamping:isrep"
         Bool: true
       }
       Overrides {
-        Name: "cs:Damping:category"
-        String: "EndLocationMovement"
+        Name: "cs:LinearDamping:category"
+        String: "EndObjectAnimation"
       }
       Overrides {
         Name: "cs:SegmentLengthFactor:isrep"
@@ -235,7 +230,7 @@ Assets {
       }
       Overrides {
         Name: "cs:MaxStretchFactor:category"
-        String: "EndLocationMovement"
+        String: "EndObjectAnimation"
       }
       Overrides {
         Name: "cs:CustomMaterial:category"
@@ -249,7 +244,28 @@ Assets {
         Name: "cs:CustomColor:category"
         String: "Rope"
       }
+      Overrides {
+        Name: "cs:StartObject:tooltip"
+        String: "Start position of the  rope"
+      }
+      Overrides {
+        Name: "cs:EndObject:tooltip"
+        String: "End position of the rope"
+      }
+      Overrides {
+        Name: "cs:SegmentTemplate:tooltip"
+        String: "Template for the segments of the rope."
+      }
+      Overrides {
+        Name: "cs:SegmentCount:tooltip"
+        String: "Number of segment template instances for this rope."
+      }
+      Overrides {
+        Name: "cs:SegmentLengthFactor:tooltip"
+        String: "Changes the relative segment\'s  length."
+      }
     }
   }
   SerializationVersion: 103
+  VirtualFolderPath: "RapidRope"
 }

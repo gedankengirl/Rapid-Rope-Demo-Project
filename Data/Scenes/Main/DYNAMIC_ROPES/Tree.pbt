@@ -1,13 +1,149 @@
-Name: "DefaultContext"
+Name: "DYNAMIC_ROPES"
 RootId: 7363206914571141066
 Objects {
-  Id: 1958342055042492205
-  Name: "Plane Hexagon - One Sided"
+  Id: 4052881970581655578
+  Name: "B"
   Transform {
     Location {
-      X: -1.09642151e-05
-      Y: -908.625
-      Z: 509.357727
+      X: 172.47345
+      Y: -1188.64453
+      Z: 400
+    }
+    Rotation {
+      Pitch: 90
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 7363206914571141066
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13811102149856364528
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.0633773133
+        G: 0.87
+        A: 1
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7213474027697530376
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 12941668152613149855
+  Name: "C"
+  Transform {
+    Location {
+      X: 172.47345
+      Y: -413.127869
+      Z: 597.095825
+    }
+    Rotation {
+      Pitch: 90
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 7363206914571141066
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13811102149856364528
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.152317613
+        B: 0.919999957
+        A: 1
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7213474027697530376
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 1958342055042492205
+  Name: "HexagonRotator"
+  Transform {
+    Location {
+      X: 200
+      Y: -1000
+      Z: 500
     }
     Rotation {
       Pitch: 90
@@ -26,6 +162,15 @@ Objects {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 2488926326711407228
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.25
+        G: 0.999999821
+        B: 1
+        A: 1
       }
     }
   }
@@ -153,9 +298,9 @@ Objects {
   Name: "A"
   Transform {
     Location {
-      X: 18.8999081
-      Y: 30.9622555
-      Z: 2.59399421e-05
+      X: 15.9747057
+      Y: 27.5706787
+      Z: 2.75269175
     }
     Rotation {
     }
@@ -176,9 +321,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.00999999
-        G: 0.881986558
-        B: 1
+        R: 1
+        G: 0.0199999809
+        B: 0.0199999809
         A: 1
       }
     }
@@ -231,8 +376,8 @@ Objects {
     }
   }
   ParentId: 7363206914571141066
-  ChildIds: 7342647847363423781
-  ChildIds: 4040543852820840728
+  ChildIds: 15104360992854479553
+  ChildIds: 10892584106875997416
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -253,104 +398,8 @@ Objects {
   }
 }
 Objects {
-  Id: 4040543852820840728
-  Name: "Group"
-  Transform {
-    Location {
-      X: 391.606659
-      Y: -1265.08545
-      Z: 445.432953
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 971169579946572477
-  ChildIds: 17810195187919969682
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 17810195187919969682
-  Name: "Neon"
-  Transform {
-    Location {
-      Y: -25.204895
-      Z: 131.00174
-    }
-    Rotation {
-      Yaw: 89.9999924
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4040543852820840728
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.950000048
-        G: 0.660596132
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13404256004014730283
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 7342647847363423781
-  Name: "RapidRopeA_Networked"
+  Id: 10892584106875997416
+  Name: "RapidRopeAC"
   Transform {
     Location {
     }
@@ -364,36 +413,6 @@ Objects {
   }
   ParentId: 971169579946572477
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:RotationInertia"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:RotationDamping"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:OutsideForce"
-      Vector {
-        Z: 2000
-      }
-    }
-    Overrides {
-      Name: "cs:Damping"
-      Float: 0.1
-    }
-    Overrides {
-      Name: "cs:RopeBendAmount"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:RopeLength"
-      Float: 700
-    }
-    Overrides {
-      Name: "cs:RopeThickness"
-      Float: 8
-    }
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
@@ -403,37 +422,95 @@ Objects {
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 4040543852820840728
+        SelfId: 12941668152613149855
       }
     }
     Overrides {
-      Name: "cs:MaxStretchFactor"
-      Float: 1.2
+      Name: "cs:RopeLength"
+      Float: 500
     }
     Overrides {
-      Name: "cs:CustomColor"
-      Color {
-        G: 0.140927017
-        B: 0.76
-        A: 1
-      }
+      Name: "cs:RopeThickness"
+      Float: 10
     }
     Overrides {
       Name: "cs:CustomizeColor"
       Bool: true
     }
     Overrides {
-      Name: "cs:CustomMaterial"
-      AssetReference {
-        Id: 13811102149856364528
+      Name: "cs:CustomColor"
+      Color {
+        R: 1.5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5650280894414145764
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 15104360992854479553
+  Name: "RapidRopeAB"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 971169579946572477
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:StartObject"
+      ObjectReference {
+        SelfId: 17042672810378961477
       }
     }
     Overrides {
-      Name: "cs:Move"
-      Bool: true
+      Name: "cs:EndObject"
+      ObjectReference {
+        SelfId: 4052881970581655578
+      }
     }
     Overrides {
-      Name: "cs:Rotate"
+      Name: "cs:RopeLength"
+      Float: 300
+    }
+    Overrides {
+      Name: "cs:RopeThickness"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:CustomColor"
+      Color {
+        R: 1.5
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:CustomizeColor"
       Bool: true
     }
   }

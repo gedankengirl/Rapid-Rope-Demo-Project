@@ -17,10 +17,11 @@ Objects {
   ChildIds: 9086936746104183945
   ChildIds: 16813558807825262224
   ChildIds: 10005074784157121906
-  ChildIds: 14982843161775482339
+  ChildIds: 9894377226194405607
   ChildIds: 7363206914571141066
-  ChildIds: 11047802994166892624
+  ChildIds: 3124154871928071324
   ChildIds: 7384571046181485911
+  ChildIds: 14982843161775482339
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,11 +40,56 @@ Objects {
   }
 }
 Objects {
+  Id: 14982843161775482339
+  Name: "Default Floor"
+  Transform {
+    Location {
+      Z: -50
+    }
+    Scale {
+      X: 50
+      Y: 50
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 7384571046181485911
   Name: "RapidRopeOctoDispenser"
   Transform {
     Location {
-      Y: 935.490601
+      X: -13.6190796
+      Y: 1156.64758
       Z: 3.00654602
     }
     Rotation {
@@ -76,10 +122,12 @@ Objects {
   }
 }
 Objects {
-  Id: 11047802994166892624
-  Name: "ClientContext"
+  Id: 3124154871928071324
+  Name: "STATIC_ROPES"
   Transform {
     Location {
+      X: 100
+      Y: -2395.18652
     }
     Rotation {
     }
@@ -90,17 +138,9 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 4942736971446301709
-  ChildIds: 2219661699009295394
-  ChildIds: 4217946892807584237
-  ChildIds: 7115050003025065395
-  ChildIds: 15269121536151085368
-  ChildIds: 11588892928591217173
-  ChildIds: 9642207378229952398
-  ChildIds: 11840915540901238650
-  ChildIds: 13874125095132410819
-  ChildIds: 1891110421670046951
-  ChildIds: 9217417413144616916
+  ChildIds: 7446165714489620362
+  ChildIds: 13285583043972561816
+  ChildIds: 14102323252423790418
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -120,12 +160,50 @@ Objects {
   }
 }
 Objects {
-  Id: 9217417413144616916
+  Id: 14102323252423790418
+  Name: "StaticRopeDemo"
+  Transform {
+    Location {
+      X: -100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3124154871928071324
+  ChildIds: 7235410242662042395
+  ChildIds: 13753165241083335743
+  ChildIds: 15783221474356569868
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 15783221474356569868
   Name: "Static_B"
   Transform {
     Location {
-      Y: 1897.29138
-      Z: 426.862122
+      Y: 800
+      Z: 300
     }
     Rotation {
     }
@@ -135,7 +213,544 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 11047802994166892624
+  ParentId: 14102323252423790418
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13811102149856364528
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.0331125259
+        G: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3415555953049614748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 13753165241083335743
+  Name: "Static_A"
+  Transform {
+    Location {
+      Y: 200
+      Z: 300
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 14102323252423790418
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13811102149856364528
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.0199999809
+        B: 0.0199999809
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3415555953049614748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 7235410242662042395
+  Name: "RapidRopeStatic"
+  Transform {
+    Location {
+      X: 64.9264069
+      Y: -1040.82068
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14102323252423790418
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:StartObject"
+      ObjectReference {
+        SelfId: 13753165241083335743
+      }
+    }
+    Overrides {
+      Name: "cs:EndObject"
+      ObjectReference {
+        SelfId: 15783221474356569868
+      }
+    }
+    Overrides {
+      Name: "cs:RopeThickness"
+      Float: 20
+    }
+    Overrides {
+      Name: "cs:OutsideForce"
+      Vector {
+        X: -90
+        Y: 100
+        Z: -2000
+      }
+    }
+    Overrides {
+      Name: "cs:MaxStretchFactor"
+      Float: 3
+    }
+    Overrides {
+      Name: "cs:RopeLength"
+      Float: 800
+    }
+    Overrides {
+      Name: "cs:CustomColor"
+      Color {
+        G: 0.468000025
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:CustomizeColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:CustomMaterial"
+      AssetReference {
+        Id: 13125578781670757134
+      }
+    }
+    Overrides {
+      Name: "cs:EnableMovement"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:ConeFactor"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5650280894414145764
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 13285583043972561816
+  Name: "StaticRopeDemo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3124154871928071324
+  ChildIds: 2270672258471329745
+  ChildIds: 14210921500186894581
+  ChildIds: 11593144407515943878
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 11593144407515943878
+  Name: "Static_B"
+  Transform {
+    Location {
+      Y: 500
+      Z: 500
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 13285583043972561816
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13811102149856364528
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.0331125259
+        G: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3415555953049614748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 14210921500186894581
+  Name: "Static_A"
+  Transform {
+    Location {
+      Y: 200
+      Z: 300
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 13285583043972561816
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13811102149856364528
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.0199999809
+        B: 0.0199999809
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3415555953049614748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 2270672258471329745
+  Name: "RapidRopeStatic"
+  Transform {
+    Location {
+      X: 64.9264069
+      Y: -1040.82068
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13285583043972561816
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:StartObject"
+      ObjectReference {
+        SelfId: 14210921500186894581
+      }
+    }
+    Overrides {
+      Name: "cs:EndObject"
+      ObjectReference {
+        SelfId: 11593144407515943878
+      }
+    }
+    Overrides {
+      Name: "cs:RopeThickness"
+      Float: 20
+    }
+    Overrides {
+      Name: "cs:OutsideForce"
+      Vector {
+        X: -90
+        Y: 100
+        Z: -2000
+      }
+    }
+    Overrides {
+      Name: "cs:MaxStretchFactor"
+      Float: 3
+    }
+    Overrides {
+      Name: "cs:RopeLength"
+      Float: 800
+    }
+    Overrides {
+      Name: "cs:CustomColor"
+      Color {
+        G: 0.468000025
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:CustomizeColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:CustomMaterial"
+      AssetReference {
+        Id: 13125578781670757134
+      }
+    }
+    Overrides {
+      Name: "cs:EnableMovement"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:SegmentLengthFactor"
+      Float: 1.075
+    }
+    Overrides {
+      Name: "cs:ConeFactor"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5650280894414145764
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 7446165714489620362
+  Name: "StaticRopeDemo"
+  Transform {
+    Location {
+      X: 100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3124154871928071324
+  ChildIds: 13874125095132410819
+  ChildIds: 1891110421670046951
+  ChildIds: 9217417413144616916
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 9217417413144616916
+  Name: "Static_B"
+  Transform {
+    Location {
+      Y: 800
+      Z: 500
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 7446165714489620362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -189,9 +804,8 @@ Objects {
   Name: "Static_A"
   Transform {
     Location {
-      X: -194.779221
-      Y: 1225.17053
-      Z: 268.631622
+      Y: 200
+      Z: 300
     }
     Rotation {
     }
@@ -201,7 +815,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 11047802994166892624
+  ParentId: 7446165714489620362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -256,6 +870,8 @@ Objects {
   Name: "RapidRopeStatic"
   Transform {
     Location {
+      X: 64.9264069
+      Y: -1040.82068
     }
     Rotation {
     }
@@ -265,12 +881,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11047802994166892624
+  ParentId: 7446165714489620362
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:Move"
-      Bool: false
-    }
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
@@ -288,10 +900,6 @@ Objects {
       Float: 20
     }
     Overrides {
-      Name: "cs:Stiffness"
-      Float: 10
-    }
-    Overrides {
       Name: "cs:OutsideForce"
       Vector {
         X: -90
@@ -302,10 +910,6 @@ Objects {
     Overrides {
       Name: "cs:MaxStretchFactor"
       Float: 3
-    }
-    Overrides {
-      Name: "cs:Damping"
-      Float: 0.001
     }
     Overrides {
       Name: "cs:RopeLength"
@@ -328,6 +932,18 @@ Objects {
       AssetReference {
         Id: 13125578781670757134
       }
+    }
+    Overrides {
+      Name: "cs:EnableMovement"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:SegmentLengthFactor"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:ConeFactor"
+      Float: 0.25
     }
   }
   Collidable_v2 {
@@ -352,352 +968,10 @@ Objects {
   }
 }
 Objects {
-  Id: 11840915540901238650
-  Name: "Ten4"
+  Id: 7363206914571141066
+  Name: "DYNAMIC_ROPES"
   Transform {
     Location {
-      X: 547.852417
-      Y: 343.668213
-      Z: 351.761353
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.25
-      Y: 0.25
-      Z: 0.25
-    }
-  }
-  ParentId: 11047802994166892624
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17154798035875594168
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 3
-        G: 1.50516593
-        B: 0.0299999714
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3415555953049614748
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 9642207378229952398
-  Name: "Ten3"
-  Transform {
-    Location {
-      X: 547.852417
-      Y: 162.836853
-      Z: 498.886353
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.25
-      Y: 0.25
-      Z: 0.25
-    }
-  }
-  ParentId: 11047802994166892624
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17154798035875594168
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 3
-        G: 1.50516593
-        B: 0.0299999714
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3415555953049614748
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 11588892928591217173
-  Name: "Ten2"
-  Transform {
-    Location {
-      X: 547.852417
-      Y: 555.863342
-      Z: 590.231445
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.25
-      Y: 0.25
-      Z: 0.25
-    }
-  }
-  ParentId: 11047802994166892624
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17154798035875594168
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 3
-        G: 1.50516593
-        B: 0.0299999714
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3415555953049614748
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 15269121536151085368
-  Name: "Ten1"
-  Transform {
-    Location {
-      X: 547.852417
-      Y: 147.610901
-      Z: 590.231445
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.25
-      Y: 0.25
-      Z: 0.25
-    }
-  }
-  ParentId: 11047802994166892624
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17154798035875594168
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 3
-        G: 1.50516593
-        B: 0.0299999714
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3415555953049614748
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 7115050003025065395
-  Name: "Text 01: B"
-  Transform {
-    Location {
-      X: 341.322601
-      Y: 826.566772
-      Z: 505.071503
-    }
-    Rotation {
-      Yaw: 89.9999847
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11047802994166892624
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font.Bevel:id"
-      AssetReference {
-        Id: 10184847056121543272
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:id"
-      AssetReference {
-        Id: 10184847056121543272
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Sides:id"
-      AssetReference {
-        Id: 10184847056121543272
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14184385624316253211
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 4217946892807584237
-  Name: "OctoGroup"
-  Transform {
-    Location {
-      X: 391.606659
-      Y: 354.08551
-      Z: 445.432953
     }
     Rotation {
     }
@@ -707,14 +981,56 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11047802994166892624
-  ChildIds: 12997440089963238626
-  ChildIds: 2202609827456542945
-  ChildIds: 10832509381750587896
-  ChildIds: 3303644373696349750
-  ChildIds: 11674585031056988652
-  ChildIds: 9101658517844987560
-  ChildIds: 15645769135808592598
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Mat"
+      AssetReference {
+        Id: 13811102149856364528
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "DYNAMIC_ROPES"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 9894377226194405607
+  Name: "DYNAMIC_ROPE_ANIMATOR"
+  Transform {
+    Location {
+      X: 200
+      Y: 156.55603
+      Z: 500
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 12939428357745115020
+  ChildIds: 16456775374286791323
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -735,7 +1051,360 @@ Objects {
   }
 }
 Objects {
-  Id: 15645769135808592598
+  Id: 16456775374286791323
+  Name: "ClientContext"
+  Transform {
+    Location {
+      X: -200
+      Y: -156.55603
+      Z: -500
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9894377226194405607
+  ChildIds: 1975913390453701410
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 1975913390453701410
+  Name: "OctoGroup"
+  Transform {
+    Location {
+      X: 391.606659
+      Y: 354.08551
+      Z: 445.432953
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16456775374286791323
+  ChildIds: 8038116902270246791
+  ChildIds: 10082070819359576560
+  ChildIds: 18334730935662123222
+  ChildIds: 12259094530524965156
+  ChildIds: 1471076780804089468
+  ChildIds: 11640996324538591409
+  ChildIds: 15201117983683573852
+  ChildIds: 428847223785614644
+  ChildIds: 14673174693079276762
+  ChildIds: 5693700110309418096
+  ChildIds: 7588992635015651636
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 7588992635015651636
+  Name: "TentacleEnd4"
+  Transform {
+    Location {
+      X: 156.245758
+      Y: -10.4172974
+      Z: -93.6716
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 1975913390453701410
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17154798035875594168
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 3
+        G: 1.50516593
+        B: 0.0299999714
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3415555953049614748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 5693700110309418096
+  Name: "TentacleEnd3"
+  Transform {
+    Location {
+      X: 156.245758
+      Y: -191.248657
+      Z: 53.4534
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 1975913390453701410
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17154798035875594168
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 3
+        G: 1.50516593
+        B: 0.0299999714
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3415555953049614748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 14673174693079276762
+  Name: "TentacleEnd2"
+  Transform {
+    Location {
+      X: 156.245758
+      Y: 201.777832
+      Z: 144.798492
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 1975913390453701410
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17154798035875594168
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 3
+        G: 1.50516593
+        B: 0.0299999714
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3415555953049614748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 428847223785614644
+  Name: "TentacleEnd1"
+  Transform {
+    Location {
+      X: 156.245758
+      Y: -206.474609
+      Z: 144.798492
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.25
+      Y: 0.25
+      Z: 0.25
+    }
+  }
+  ParentId: 1975913390453701410
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17154798035875594168
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 3
+        G: 1.50516593
+        B: 0.0299999714
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3415555953049614748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 15201117983683573852
   Name: "OctoRoot"
   Transform {
     Location {
@@ -752,7 +1421,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 4217946892807584237
+  ParentId: 1975913390453701410
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -802,8 +1471,8 @@ Objects {
   }
 }
 Objects {
-  Id: 9101658517844987560
-  Name: "RapidRopeTen4"
+  Id: 11640996324538591409
+  Name: "RapidRopeTentacle4"
   Transform {
     Location {
       X: -391.606659
@@ -818,16 +1487,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4217946892807584237
+  ParentId: 1975913390453701410
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:Move"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Stiffness"
-      Float: 600
-    }
     Overrides {
       Name: "cs:OutsideForce"
       Vector {
@@ -837,10 +1498,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Damping"
-      Float: 0.5
-    }
-    Overrides {
       Name: "cs:SegmentCount"
       Int: 30
     }
@@ -857,13 +1514,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 15645769135808592598
+        SelfId: 15201117983683573852
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 11840915540901238650
+        SelfId: 7588992635015651636
       }
     }
     Overrides {
@@ -883,12 +1540,20 @@ Objects {
       Float: 2
     }
     Overrides {
-      Name: "cs:RotationInertia"
+      Name: "cs:RopeStiffness"
+      Float: 500
+    }
+    Overrides {
+      Name: "cs:LinearDamping"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:AngularDamping"
       Float: 5
     }
     Overrides {
-      Name: "cs:RotationDamping"
-      Float: 5
+      Name: "cs:EnableMovement"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -913,8 +1578,8 @@ Objects {
   }
 }
 Objects {
-  Id: 11674585031056988652
-  Name: "RapidRopeTen3"
+  Id: 1471076780804089468
+  Name: "RapidRopeTentacle3"
   Transform {
     Location {
       X: -391.606659
@@ -929,16 +1594,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4217946892807584237
+  ParentId: 1975913390453701410
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:Move"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Stiffness"
-      Float: 630
-    }
     Overrides {
       Name: "cs:OutsideForce"
       Vector {
@@ -948,10 +1605,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Damping"
-      Float: 0.5
-    }
-    Overrides {
       Name: "cs:SegmentCount"
       Int: 30
     }
@@ -968,13 +1621,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 15645769135808592598
+        SelfId: 15201117983683573852
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 9642207378229952398
+        SelfId: 5693700110309418096
       }
     }
     Overrides {
@@ -994,12 +1647,20 @@ Objects {
       Float: 2
     }
     Overrides {
-      Name: "cs:RotationInertia"
+      Name: "cs:RopeStiffness"
+      Float: 500
+    }
+    Overrides {
+      Name: "cs:LinearDamping"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:AngularDamping"
       Float: 5
     }
     Overrides {
-      Name: "cs:RotationDamping"
-      Float: 5
+      Name: "cs:EnableMovement"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -1024,8 +1685,8 @@ Objects {
   }
 }
 Objects {
-  Id: 3303644373696349750
-  Name: "RapidRopeTen2"
+  Id: 12259094530524965156
+  Name: "RapidRopeTentacle2"
   Transform {
     Location {
       X: -391.606659
@@ -1040,16 +1701,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4217946892807584237
+  ParentId: 1975913390453701410
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:Move"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Stiffness"
-      Float: 601
-    }
     Overrides {
       Name: "cs:OutsideForce"
       Vector {
@@ -1059,10 +1712,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Damping"
-      Float: 0.5
-    }
-    Overrides {
       Name: "cs:SegmentCount"
       Int: 30
     }
@@ -1079,13 +1728,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 15645769135808592598
+        SelfId: 15201117983683573852
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 11588892928591217173
+        SelfId: 14673174693079276762
       }
     }
     Overrides {
@@ -1105,12 +1754,20 @@ Objects {
       Float: 2
     }
     Overrides {
-      Name: "cs:RotationInertia"
+      Name: "cs:RopeStiffness"
+      Float: 500
+    }
+    Overrides {
+      Name: "cs:LinearDamping"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:AngularDamping"
       Float: 5
     }
     Overrides {
-      Name: "cs:RotationDamping"
-      Float: 5
+      Name: "cs:EnableMovement"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -1135,8 +1792,8 @@ Objects {
   }
 }
 Objects {
-  Id: 10832509381750587896
-  Name: "RapidRopeTen1"
+  Id: 18334730935662123222
+  Name: "RapidRopeTentacle1"
   Transform {
     Location {
       X: -391.606659
@@ -1151,16 +1808,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4217946892807584237
+  ParentId: 1975913390453701410
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:Move"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Stiffness"
-      Float: 500
-    }
     Overrides {
       Name: "cs:OutsideForce"
       Vector {
@@ -1168,10 +1817,6 @@ Objects {
         Y: 30
         Z: 511.056976
       }
-    }
-    Overrides {
-      Name: "cs:Damping"
-      Float: 0.5
     }
     Overrides {
       Name: "cs:SegmentCount"
@@ -1190,13 +1835,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 15645769135808592598
+        SelfId: 15201117983683573852
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 15269121536151085368
+        SelfId: 428847223785614644
       }
     }
     Overrides {
@@ -1216,12 +1861,20 @@ Objects {
       Float: 2
     }
     Overrides {
-      Name: "cs:RotationInertia"
+      Name: "cs:RopeStiffness"
+      Float: 500
+    }
+    Overrides {
+      Name: "cs:LinearDamping"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:AngularDamping"
       Float: 5
     }
     Overrides {
-      Name: "cs:RotationDamping"
-      Float: 5
+      Name: "cs:EnableMovement"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -1246,7 +1899,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2202609827456542945
+  Id: 10082070819359576560
   Name: "RapidRopeMoveOcto"
   Transform {
     Location {
@@ -1262,35 +1915,17 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4217946892807584237
+  ParentId: 1975913390453701410
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:StartObject"
-      ObjectReference {
-        SelfId: 16751681775387660063
-      }
-    }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 4217946892807584237
+        SelfId: 1975913390453701410
       }
     }
     Overrides {
       Name: "cs:RopeLength"
-      Float: 600
-    }
-    Overrides {
-      Name: "cs:RotationDamping"
-      Float: 5
-    }
-    Overrides {
-      Name: "cs:Stiffness"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:Damping"
-      Float: 0.01
+      Float: 500
     }
     Overrides {
       Name: "cs:OutsideForce"
@@ -1300,7 +1935,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RopeThickness"
-      Float: 8
+      Float: 5
     }
     Overrides {
       Name: "cs:CustomizeColor"
@@ -1309,18 +1944,42 @@ Objects {
     Overrides {
       Name: "cs:CustomColor"
       Color {
-        G: 0.960000038
-        B: 0.0063576512
+        R: 2
+        G: 1.58940399
         A: 1
       }
     }
     Overrides {
-      Name: "cs:Move"
+      Name: "cs:RopeStiffness"
+      Float: 20
+    }
+    Overrides {
+      Name: "cs:LinearDamping"
+      Float: 0.01
+    }
+    Overrides {
+      Name: "cs:EnableMovement"
       Bool: true
     }
     Overrides {
-      Name: "cs:Rotate"
-      Bool: true
+      Name: "cs:StartObject"
+      ObjectReference {
+        SelfId: 17479735288860237882
+      }
+    }
+    Overrides {
+      Name: "cs:CustomMaterial"
+      AssetReference {
+        Id: 2241781309209464148
+      }
+    }
+    Overrides {
+      Name: "cs:ConeFactor"
+      Float: 4
+    }
+    Overrides {
+      Name: "cs:SegmentCount"
+      Int: 30
     }
   }
   Collidable_v2 {
@@ -1345,7 +2004,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12997440089963238626
+  Id: 8038116902270246791
   Name: "Neon"
   Transform {
     Location {
@@ -1361,13 +2020,21 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4217946892807584237
+  ParentId: 1975913390453701410
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
         R: 0.950000048
         G: 0.660596132
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Font_Neon:color"
+      Color {
+        R: 2
+        G: 0.800000072
         A: 1
       }
     }
@@ -1403,13 +2070,10 @@ Objects {
   }
 }
 Objects {
-  Id: 2219661699009295394
-  Name: "Plane Hexagone - One Sided"
+  Id: 12939428357745115020
+  Name: "HexagonRotator"
   Transform {
     Location {
-      X: 400
-      Y: 200
-      Z: 500
     }
     Rotation {
       Pitch: 90
@@ -1420,21 +2084,27 @@ Objects {
       Z: 10
     }
   }
-  ParentId: 11047802994166892624
-  ChildIds: 16751681775387660063
-  ChildIds: 14734334749235040910
+  ParentId: 9894377226194405607
+  ChildIds: 17479735288860237882
+  ChildIds: 16160650628247419361
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 2488926326711407228
       }
     }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.25
+        G: 0.999999821
+        B: 1
+        A: 1
+      }
+    }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1468,17 +2138,16 @@ Objects {
   }
 }
 Objects {
-  Id: 14734334749235040910
+  Id: 16160650628247419361
   Name: "Object Rotator Continuous"
   Transform {
     Location {
-      X: -53.6147728
-      Y: 58.4846573
-      Z: 40
+      X: -54.5506
+      Y: 169.347153
+      Z: 6.10351572e-06
     }
     Rotation {
       Pitch: -90
-      Roll: 2.73207424e-05
     }
     Scale {
       X: 0.2
@@ -1486,12 +2155,12 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 2219661699009295394
+  ParentId: 12939428357745115020
   UnregisteredParameters {
     Overrides {
       Name: "cs:Object"
       ObjectReference {
-        SelfId: 2219661699009295394
+        SelfId: 12939428357745115020
       }
     }
     Overrides {
@@ -1535,6 +2204,7 @@ Objects {
       String: "Smoothly rotates the object over time by the given angular velocity."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1554,177 +2224,37 @@ Objects {
   }
 }
 Objects {
-  Id: 16751681775387660063
-  Name: "Text 01: A"
+  Id: 17479735288860237882
+  Name: "A"
   Transform {
     Location {
-      Y: 38.3330078
-      Z: 5
-    }
-    Rotation {
-      Yaw: 89.9999847
-      Roll: -90
-    }
-    Scale {
-      X: 0.15
-      Y: 0.15
-      Z: 0.15
-    }
-  }
-  ParentId: 2219661699009295394
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font.Bevel:id"
-      AssetReference {
-        Id: 10184847056121543272
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:id"
-      AssetReference {
-        Id: 10184847056121543272
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Sides:id"
-      AssetReference {
-        Id: 10184847056121543272
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13578911081392213091
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 4942736971446301709
-  Name: "RapidRopeAB"
-  Transform {
-    Location {
+      X: 15.9747057
+      Y: 27.5706787
+      Z: 2.75269175
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
     }
   }
-  ParentId: 11047802994166892624
+  ParentId: 12939428357745115020
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Move"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RopeBendAmount"
-      Float: 1
-    }
-    Overrides {
-      Name: "cs:StartObject"
-      ObjectReference {
-        SelfId: 16751681775387660063
-      }
-    }
-    Overrides {
-      Name: "cs:EndObject"
-      ObjectReference {
-        SelfId: 7115050003025065395
-      }
-    }
-    Overrides {
-      Name: "cs:RopeLength"
-      Float: 500
-    }
-    Overrides {
-      Name: "cs:CustomizeColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:CustomColor"
-      Color {
-        R: 1.5
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:RopeThickness"
-      Float: 8
-    }
-    Overrides {
-      Name: "cs:Rotate"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5650280894414145764
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 7363206914571141066
-  Name: "DefaultContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Mat"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 13811102149856364528
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.0199999809
+        B: 0.0199999809
+        A: 1
       }
     }
   }
@@ -1741,50 +2271,18 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "DefaultContext"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 14982843161775482339
-  Name: "Default Floor"
-  Transform {
-    Location {
-      Z: -50
-    }
-    Scale {
-      X: 50
-      Y: 50
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 7213474027697530376
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    InteractWithTriggers: true
     StaticMesh {
       Physics {
+        Mass: 100
+        LinearDamping: 0.01
       }
       BoundsScale: 1
     }
@@ -2161,6 +2659,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
+      X: -421.915833
+      Y: -1980.9458
       Z: 115
     }
     Rotation {
