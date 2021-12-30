@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13125578781670757134
+  Name: "Car Paint Advanced 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_car-paint_advanced_001_uv_ref"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1

@@ -20,6 +20,7 @@ Objects {
   ChildIds: 14982843161775482339
   ChildIds: 7363206914571141066
   ChildIds: 11047802994166892624
+  ChildIds: 7384571046181485911
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -32,6 +33,43 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 7384571046181485911
+  Name: "RapidRopeOctoDispenser"
+  Transform {
+    Location {
+      Y: 935.490601
+      Z: 3.00654602
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "RapidRopeOctoDispenser"
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -151,6 +189,7 @@ Objects {
   Name: "Static_A"
   Transform {
     Location {
+      X: -194.779221
       Y: 1225.17053
       Z: 268.631622
     }
@@ -214,7 +253,7 @@ Objects {
 }
 Objects {
   Id: 13874125095132410819
-  Name: "EasyRopeStatic"
+  Name: "RapidRopeStatic"
   Transform {
     Location {
     }
@@ -246,7 +285,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RopeThickness"
-      Float: 30
+      Float: 20
     }
     Overrides {
       Name: "cs:Stiffness"
@@ -273,16 +312,9 @@ Objects {
       Float: 800
     }
     Overrides {
-      Name: "cs:CustomMaterial"
-      AssetReference {
-        Id: 2488926326711407228
-      }
-    }
-    Overrides {
       Name: "cs:CustomColor"
       Color {
-        R: 0.00999999
-        G: 0.940993309
+        G: 0.468000025
         B: 1
         A: 1
       }
@@ -292,8 +324,10 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:SegmentLengthFactor"
-      Float: 0.5
+      Name: "cs:CustomMaterial"
+      AssetReference {
+        Id: 13125578781670757134
+      }
     }
   }
   Collidable_v2 {
@@ -1280,6 +1314,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "cs:Move"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Rotate"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1629,15 +1671,17 @@ Objects {
     Overrides {
       Name: "cs:CustomColor"
       Color {
-        R: 1
-        G: 0.0299999714
-        B: 0.0299999714
+        R: 1.5
         A: 1
       }
     }
     Overrides {
       Name: "cs:RopeThickness"
       Float: 8
+    }
+    Overrides {
+      Name: "cs:Rotate"
+      Bool: true
     }
   }
   Collidable_v2 {

@@ -65,7 +65,7 @@ Assets {
       }
       Overrides {
         Name: "cs:Move"
-        Bool: true
+        Bool: false
       }
       Overrides {
         Name: "cs:Stiffness"
@@ -87,7 +87,7 @@ Assets {
       }
       Overrides {
         Name: "cs:Rotate"
-        Bool: true
+        Bool: false
       }
       Overrides {
         Name: "cs:RotationInertia"
@@ -95,7 +95,7 @@ Assets {
       }
       Overrides {
         Name: "cs:RotationDamping"
-        Float: 20
+        Float: 10
       }
       Overrides {
         Name: "cs:RopeLength:isrep"

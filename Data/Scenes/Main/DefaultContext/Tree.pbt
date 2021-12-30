@@ -413,9 +413,8 @@ Objects {
     Overrides {
       Name: "cs:CustomColor"
       Color {
-        R: 1
-        G: 0.97377485
-        B: 0.00999999
+        G: 0.140927017
+        B: 0.76
         A: 1
       }
     }
@@ -428,6 +427,14 @@ Objects {
       AssetReference {
         Id: 13811102149856364528
       }
+    }
+    Overrides {
+      Name: "cs:Move"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Rotate"
+      Bool: true
     }
   }
   Collidable_v2 {
