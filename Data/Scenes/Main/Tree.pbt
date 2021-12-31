@@ -20,12 +20,8 @@ Objects {
   ChildIds: 9894377226194405607
   ChildIds: 7363206914571141066
   ChildIds: 3124154871928071324
-  ChildIds: 7384571046181485911
-  ChildIds: 4236011121117848007
-  ChildIds: 8653724114313815298
-  ChildIds: 2448117065610458464
-  ChildIds: 5148591516334145864
   ChildIds: 14982843161775482339
+  ChildIds: 10549152221053020836
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +34,42 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 10549152221053020836
+  Name: "RapidRopeOctoDispenser"
+  Transform {
+    Location {
+      X: -13.6190796
+      Y: 1423.07935
+      Z: 3.00654602
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "RapidRopeOctoDispenser"
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -88,260 +120,6 @@ Objects {
   }
 }
 Objects {
-  Id: 5148591516334145864
-  Name: "World Text"
-  Transform {
-    Location {
-      X: -290.906677
-      Y: 1453.48
-      Z: 3.7114563
-    }
-    Rotation {
-      Pitch: 90
-      Yaw: -3.05175781e-05
-      Roll: 179.999969
-    }
-    Scale {
-      X: 3.37665296
-      Y: 3.37665296
-      Z: 3.37665296
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Text {
-    Text: "OCTO PET DISPENSER ^__^"
-    FontAsset {
-    }
-    Color {
-      R: 1
-      G: 1
-      B: 1
-      A: 1
-    }
-    HorizontalAlignment {
-      Value: "mc:ecoretexthorizontalalign:center"
-    }
-    VerticalAlignment {
-      Value: "mc:ecoretextverticalalign:center"
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 2448117065610458464
-  Name: "World Text"
-  Transform {
-    Location {
-      X: -290.906677
-      Y: 327.565338
-      Z: 3.7114563
-    }
-    Rotation {
-      Pitch: 90
-      Yaw: 5.46415104e-05
-      Roll: -179.999985
-    }
-    Scale {
-      X: 3.37665296
-      Y: 3.37665296
-      Z: 3.37665296
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Text {
-    Text: "DYNAMIC ROPE ANIMATOR"
-    FontAsset {
-    }
-    Color {
-      R: 1
-      G: 1
-      B: 1
-      A: 1
-    }
-    HorizontalAlignment {
-      Value: "mc:ecoretexthorizontalalign:center"
-    }
-    VerticalAlignment {
-      Value: "mc:ecoretextverticalalign:center"
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 8653724114313815298
-  Name: "World Text"
-  Transform {
-    Location {
-      X: -290.906677
-      Y: -849.644348
-      Z: 3.7114563
-    }
-    Rotation {
-      Pitch: 90
-      Yaw: -3.05175781e-05
-      Roll: 179.999924
-    }
-    Scale {
-      X: 3.37665296
-      Y: 3.37665296
-      Z: 3.37665296
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Text {
-    Text: "DYNAMIC ROPES"
-    FontAsset {
-    }
-    Color {
-      R: 1
-      G: 1
-      B: 1
-      A: 1
-    }
-    HorizontalAlignment {
-      Value: "mc:ecoretexthorizontalalign:center"
-    }
-    VerticalAlignment {
-      Value: "mc:ecoretextverticalalign:center"
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 4236011121117848007
-  Name: "World Text"
-  Transform {
-    Location {
-      X: -290.906677
-      Y: -1780.86133
-      Z: 3.7114563
-    }
-    Rotation {
-      Pitch: 90
-      Yaw: 3.4150944e-06
-      Roll: 179.999985
-    }
-    Scale {
-      X: 3.37665296
-      Y: 3.37665296
-      Z: 3.37665296
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Text {
-    Text: "STATIC ROPES"
-    FontAsset {
-    }
-    Color {
-      R: 1
-      G: 1
-      B: 1
-      A: 1
-    }
-    HorizontalAlignment {
-      Value: "mc:ecoretexthorizontalalign:center"
-    }
-    VerticalAlignment {
-      Value: "mc:ecoretextverticalalign:center"
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 7384571046181485911
-  Name: "RapidRopeOctoDispenser"
-  Transform {
-    Location {
-      X: -13.6190796
-      Y: 1423.07935
-      Z: 3.00654602
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "RapidRopeOctoDispenser"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
   Id: 3124154871928071324
   Name: "STATIC_ROPES"
   Transform {
@@ -361,6 +139,7 @@ Objects {
   ChildIds: 7446165714489620362
   ChildIds: 13285583043972561816
   ChildIds: 14102323252423790418
+  ChildIds: 4236011121117848007
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -374,6 +153,59 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 4236011121117848007
+  Name: "World Text"
+  Transform {
+    Location {
+      X: -390.906677
+      Y: 432.063721
+      Z: 3.7114563
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -4.55345935e-06
+      Roll: 179.999969
+    }
+    Scale {
+      X: 3.37665296
+      Y: 3.37665296
+      Z: 3.37665296
+    }
+  }
+  ParentId: 3124154871928071324
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    Text: "STATIC ROPES"
+    FontAsset {
+    }
+    Color {
+      G: 1
+      B: 1
+      A: 1
+    }
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -1290,6 +1122,7 @@ Objects {
   }
   ParentId: 9894377226194405607
   ChildIds: 1975913390453701410
+  ChildIds: 2448117065610458464
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -1303,6 +1136,59 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 2448117065610458464
+  Name: "World Text"
+  Transform {
+    Location {
+      X: -290.906677
+      Y: 145.303497
+      Z: 3.7114563
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -1.82138374e-05
+      Roll: 179.999969
+    }
+    Scale {
+      X: 3.37665296
+      Y: 3.37665296
+      Z: 3.37665296
+    }
+  }
+  ParentId: 16456775374286791323
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    Text: "DYNAMIC ROPE ANIMATOR"
+    FontAsset {
+    }
+    Color {
+      G: 1
+      B: 1
+      A: 1
+    }
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"

@@ -1,7 +1,7 @@
 Name: "RapidRopeOctoDispenser"
-RootId: 7384571046181485911
+RootId: 10549152221053020836
 Objects {
-  Id: 17774091425377916447
+  Id: 195655665457086956
   Name: "ClientContext"
   Transform {
     Location {
@@ -15,8 +15,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7384571046181485911
-  ChildIds: 8948093031709978641
+  ParentId: 10549152221053020836
+  ChildIds: 9814285888414541794
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -37,7 +37,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8948093031709978641
+  Id: 9814285888414541794
   Name: "@OctoEquipment"
   Transform {
     Location {
@@ -51,8 +51,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17774091425377916447
-  ChildIds: 5600665348815687358
+  ParentId: 195655665457086956
+  ChildIds: 13377051291546868045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -76,7 +76,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5600665348815687358
+  Id: 13377051291546868045
   Name: "ClientContext"
   Transform {
     Location {
@@ -90,11 +90,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8948093031709978641
-  ChildIds: 2875879497303050310
-  ChildIds: 1583775480030178543
-  ChildIds: 9553677483526793932
-  ChildIds: 2635005751295440405
+  ParentId: 9814285888414541794
+  ChildIds: 15272963189985812405
+  ChildIds: 16278235942320831260
+  ChildIds: 8108767677833051455
+  ChildIds: 15027440986847977958
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -114,7 +114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2635005751295440405
+  Id: 15027440986847977958
   Name: "OctoBody"
   Transform {
     Location {
@@ -128,8 +128,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5600665348815687358
-  ChildIds: 16066336808005306001
+  ParentId: 13377051291546868045
+  ChildIds: 3092356680195494242
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -150,7 +150,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16066336808005306001
+  Id: 3092356680195494242
   Name: "OctoBosyRoot"
   Transform {
     Location {
@@ -167,7 +167,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2635005751295440405
+  ParentId: 15027440986847977958
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -217,7 +217,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9553677483526793932
+  Id: 8108767677833051455
   Name: "RapidRopeString"
   Transform {
     Location {
@@ -231,18 +231,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5600665348815687358
+  ParentId: 13377051291546868045
   UnregisteredParameters {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 8948093031709978641
+        SelfId: 9814285888414541794
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 2635005751295440405
+        SelfId: 15027440986847977958
       }
     }
     Overrides {
@@ -328,7 +328,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1583775480030178543
+  Id: 16278235942320831260
   Name: "TentacleEnds"
   Transform {
     Location {
@@ -344,15 +344,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5600665348815687358
-  ChildIds: 6592862349091434946
-  ChildIds: 9189034253068113245
-  ChildIds: 10858154213809394843
-  ChildIds: 7213651443203717595
-  ChildIds: 17904608026152335029
-  ChildIds: 3759796491808925430
-  ChildIds: 18426922682374290807
-  ChildIds: 16444237847722166891
+  ParentId: 13377051291546868045
+  ChildIds: 12638181718626346545
+  ChildIds: 10059735106545697454
+  ChildIds: 7111944167222035304
+  ChildIds: 10376667328012054056
+  ChildIds: 893023427600949574
+  ChildIds: 13848604920500760837
+  ChildIds: 839022741098769028
+  ChildIds: 1164445494847004056
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -373,7 +373,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16444237847722166891
+  Id: 1164445494847004056
   Name: "Ball_8"
   Transform {
     Location {
@@ -390,7 +390,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 1583775480030178543
+  ParentId: 16278235942320831260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -443,7 +443,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18426922682374290807
+  Id: 839022741098769028
   Name: "Ball_7"
   Transform {
     Location {
@@ -460,7 +460,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 1583775480030178543
+  ParentId: 16278235942320831260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -513,7 +513,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3759796491808925430
+  Id: 13848604920500760837
   Name: "Ball_6"
   Transform {
     Location {
@@ -530,7 +530,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 1583775480030178543
+  ParentId: 16278235942320831260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -583,7 +583,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17904608026152335029
+  Id: 893023427600949574
   Name: "Ball_5"
   Transform {
     Location {
@@ -600,7 +600,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 1583775480030178543
+  ParentId: 16278235942320831260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -653,7 +653,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7213651443203717595
+  Id: 10376667328012054056
   Name: "Ball_4"
   Transform {
     Location {
@@ -669,7 +669,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 1583775480030178543
+  ParentId: 16278235942320831260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -722,7 +722,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10858154213809394843
+  Id: 7111944167222035304
   Name: "Ball_3"
   Transform {
     Location {
@@ -738,7 +738,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 1583775480030178543
+  ParentId: 16278235942320831260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -791,7 +791,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9189034253068113245
+  Id: 10059735106545697454
   Name: "Ball_2"
   Transform {
     Location {
@@ -807,7 +807,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 1583775480030178543
+  ParentId: 16278235942320831260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -860,7 +860,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6592862349091434946
+  Id: 12638181718626346545
   Name: "Ball_1"
   Transform {
     Location {
@@ -875,7 +875,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 1583775480030178543
+  ParentId: 16278235942320831260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -928,7 +928,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2875879497303050310
+  Id: 15272963189985812405
   Name: "TentacleRopes"
   Transform {
     Location {
@@ -944,15 +944,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5600665348815687358
-  ChildIds: 10114553838879540124
-  ChildIds: 1062792819488589941
-  ChildIds: 17985064488862455755
-  ChildIds: 15131186130833187731
-  ChildIds: 11284694987543563041
-  ChildIds: 1504571195740692199
-  ChildIds: 8928398444905774379
-  ChildIds: 15859121440600792747
+  ParentId: 13377051291546868045
+  ChildIds: 8665848246210516079
+  ChildIds: 18060162658679611270
+  ChildIds: 975753817797214264
+  ChildIds: 2729638420942582880
+  ChildIds: 7531725556014980306
+  ChildIds: 16211856636602730772
+  ChildIds: 10373286535316990680
+  ChildIds: 2885594448016820568
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -973,7 +973,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15859121440600792747
+  Id: 2885594448016820568
   Name: "RapidRopeTentacle_8"
   Transform {
     Location {
@@ -987,7 +987,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2875879497303050310
+  ParentId: 15272963189985812405
   UnregisteredParameters {
     Overrides {
       Name: "cs:OutsideForce"
@@ -1014,13 +1014,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 16066336808005306001
+        SelfId: 3092356680195494242
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 16444237847722166891
+        SelfId: 1164445494847004056
       }
     }
     Overrides {
@@ -1090,7 +1090,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8928398444905774379
+  Id: 10373286535316990680
   Name: "RapidRopeTentacle_7"
   Transform {
     Location {
@@ -1104,7 +1104,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2875879497303050310
+  ParentId: 15272963189985812405
   UnregisteredParameters {
     Overrides {
       Name: "cs:OutsideForce"
@@ -1131,13 +1131,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 16066336808005306001
+        SelfId: 3092356680195494242
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 18426922682374290807
+        SelfId: 839022741098769028
       }
     }
     Overrides {
@@ -1207,7 +1207,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1504571195740692199
+  Id: 16211856636602730772
   Name: "RapidRopeTentacle_6"
   Transform {
     Location {
@@ -1221,7 +1221,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2875879497303050310
+  ParentId: 15272963189985812405
   UnregisteredParameters {
     Overrides {
       Name: "cs:OutsideForce"
@@ -1248,13 +1248,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 16066336808005306001
+        SelfId: 3092356680195494242
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 3759796491808925430
+        SelfId: 13848604920500760837
       }
     }
     Overrides {
@@ -1324,7 +1324,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11284694987543563041
+  Id: 7531725556014980306
   Name: "RapidRopeTentacle_5"
   Transform {
     Location {
@@ -1338,7 +1338,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2875879497303050310
+  ParentId: 15272963189985812405
   UnregisteredParameters {
     Overrides {
       Name: "cs:OutsideForce"
@@ -1365,13 +1365,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 16066336808005306001
+        SelfId: 3092356680195494242
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 17904608026152335029
+        SelfId: 893023427600949574
       }
     }
     Overrides {
@@ -1441,7 +1441,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15131186130833187731
+  Id: 2729638420942582880
   Name: "RapidRopeTentacle_4"
   Transform {
     Location {
@@ -1455,7 +1455,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2875879497303050310
+  ParentId: 15272963189985812405
   UnregisteredParameters {
     Overrides {
       Name: "cs:OutsideForce"
@@ -1482,13 +1482,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 16066336808005306001
+        SelfId: 3092356680195494242
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 7213651443203717595
+        SelfId: 10376667328012054056
       }
     }
     Overrides {
@@ -1558,7 +1558,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17985064488862455755
+  Id: 975753817797214264
   Name: "RapidRopeTentacle_3"
   Transform {
     Location {
@@ -1572,7 +1572,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2875879497303050310
+  ParentId: 15272963189985812405
   UnregisteredParameters {
     Overrides {
       Name: "cs:OutsideForce"
@@ -1599,13 +1599,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 16066336808005306001
+        SelfId: 3092356680195494242
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 10858154213809394843
+        SelfId: 7111944167222035304
       }
     }
     Overrides {
@@ -1675,7 +1675,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1062792819488589941
+  Id: 18060162658679611270
   Name: "RapidRopeTentacle_2"
   Transform {
     Location {
@@ -1689,7 +1689,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2875879497303050310
+  ParentId: 15272963189985812405
   UnregisteredParameters {
     Overrides {
       Name: "cs:OutsideForce"
@@ -1716,13 +1716,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 16066336808005306001
+        SelfId: 3092356680195494242
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 9189034253068113245
+        SelfId: 10059735106545697454
       }
     }
     Overrides {
@@ -1792,7 +1792,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10114553838879540124
+  Id: 8665848246210516079
   Name: "RapidRopeTentacle_1"
   Transform {
     Location {
@@ -1806,7 +1806,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2875879497303050310
+  ParentId: 15272963189985812405
   UnregisteredParameters {
     Overrides {
       Name: "cs:OutsideForce"
@@ -1833,13 +1833,13 @@ Objects {
     Overrides {
       Name: "cs:StartObject"
       ObjectReference {
-        SelfId: 16066336808005306001
+        SelfId: 3092356680195494242
       }
     }
     Overrides {
       Name: "cs:EndObject"
       ObjectReference {
-        SelfId: 6592862349091434946
+        SelfId: 12638181718626346545
       }
     }
     Overrides {
@@ -1909,64 +1909,88 @@ Objects {
   }
 }
 Objects {
-  Id: 9575526619558631431
+  Id: 10930984063120366234
   Name: "Object Rotator Continuous"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 7384571046181485911
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5456438743692384211
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Object Rotator Continuous"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "cs:Object"
-          ObjectReference {
-            SelfId: 17774091425377916447
-            SubObjectId: 4787696047779764581
-            InstanceId: 9404588572806943178
-            TemplateId: 14738133471260441711
-          }
-        }
-        Overrides {
-          Name: "cs:LocalSpace"
-          Bool: false
-        }
+  ParentId: 10549152221053020836
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Object"
+      ObjectReference {
+        SelfId: 195655665457086956
       }
     }
-    TemplateAsset {
-      Id: 17391754708776263339
+    Overrides {
+      Name: "cs:RotateVelocity"
+      Rotator {
+        Yaw: 30
+      }
     }
+    Overrides {
+      Name: "cs:RotationMultiplier"
+      Float: 1
+    }
+    Overrides {
+      Name: "cs:LocalSpace"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:StartDelayRange"
+      Vector2 {
+        Y: 1
+      }
+    }
+    Overrides {
+      Name: "cs:RotationMultiplier:tooltip"
+      String: "Optional multiplier for very fast rotations."
+    }
+    Overrides {
+      Name: "cs:StartDelayRange:tooltip"
+      String: "Random delay range for the object to take action at the start of the game."
+    }
+    Overrides {
+      Name: "cs:LocalSpace:tooltip"
+      String: "Whether RotateTo is in local space"
+    }
+    Overrides {
+      Name: "cs:Object:tooltip"
+      String: "Object to transform"
+    }
+    Overrides {
+      Name: "cs:RotateVelocity:tooltip"
+      String: "Smoothly rotates the object over time by the given angular velocity."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2331688389429807128
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
-  Id: 17794327298765745666
+  Id: 211524417138506225
   Name: "Cube - Arcade 04"
   Transform {
     Location {
@@ -1979,7 +2003,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 7384571046181485911
+  ParentId: 10549152221053020836
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -1987,7 +2011,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -2013,7 +2037,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9210135209430303399
+  Id: 10073887284706547028
   Name: "Trigger"
   Transform {
     Location {
@@ -2027,7 +2051,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 7384571046181485911
+  ParentId: 10549152221053020836
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2057,7 +2081,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14941551891662691180
+  Id: 4271194172938357919
   Name: "RapidRopeDemoServer"
   Transform {
     Location {
@@ -2070,12 +2094,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7384571046181485911
+  ParentId: 10549152221053020836
   UnregisteredParameters {
     Overrides {
       Name: "cs:Trigger"
       ObjectReference {
-        SelfId: 9210135209430303399
+        SelfId: 10073887284706547028
       }
     }
     Overrides {
@@ -2083,6 +2107,10 @@ Objects {
       AssetReference {
         Id: 14738133471260441711
       }
+    }
+    Overrides {
+      Name: "cs:Socket"
+      String: "right_prop"
     }
   }
   Collidable_v2 {
@@ -2100,6 +2128,59 @@ Objects {
   Script {
     ScriptAsset {
       Id: 14300904493899535112
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 5148591516334145864
+  Name: "World Text"
+  Transform {
+    Location {
+      X: -277.287598
+      Y: 30.4006348
+      Z: 0.704910278
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -9.1069187e-06
+      Roll: 179.999954
+    }
+    Scale {
+      X: 3.37665296
+      Y: 3.37665296
+      Z: 3.37665296
+    }
+  }
+  ParentId: 10549152221053020836
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    Text: "OCTO PET DISPENSER ^__^"
+    FontAsset {
+    }
+    Color {
+      G: 1
+      B: 1
+      A: 1
+    }
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
     }
   }
   NetworkRelevanceDistance {
