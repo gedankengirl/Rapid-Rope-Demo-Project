@@ -1,29 +1,23 @@
 
 --[[
     *** RapidRope Component for Core Engine ***
+    Author: Rinoa (https://www.coregames.com/user/1fe0c4ed2ab2416dba17f5d29ee420a4)
 
     RapidRope is a simple Core component for real-time drawing of
-    catenary*-shaped static and dynamic ropes in a client context without any
-    coding. It also provides an option of a simple physically-based procedural
-    animator.
+    catenary-shaped static and dynamic ropes in a client context without any
+    coding. It also provides an option of a simple physically-based
+    procedural animator.
 
-    It is pretty cheap (for a dynamic rope): one instance of a 30-segment rope
-    has the client CPU cost about 0.3 ms. Ropes that are for the most part
-    static (don't have `Move` property enabled and their ends change position
-    only occasionally) have a negligible CPU cost.
-
-    (*) https://en.wikipedia.org/wiki/Catenary
-
-    # Custom Properties:
+    # Custom Properties Reference:
 
     ## [Positions] section
 
-    - `StartObject` <CoreObjectReference>: determines the start position of the
-      rope. Can be in a client or default context.
+    - `StartObject` (CoreObjectReference): determines the start point of the
+    rope. Can be in a client or default context.
 
-    - `EndObject` <CoreObjectReference>: determines the end position of the
-      rope. Can be in a client or default context. If you are planning to use
-      procedural animator, `EndObject` should be placed in a client context.
+    - `EndObject` (CoreObjectReference): determines the end point of the
+    rope. Can be in a client or default context. If you are planning to use the
+    procedural animator, `EndObject` must be placed in a client context.
 
     ## [Rope] section
 
@@ -31,38 +25,58 @@
 
     - [dynamic] `RopeThickness` in cm.
 
-    - [dynamic] `RopeBendAmount` (1: default, 0.1:straight, 1.5:curvy): to
-      artificially change rope bending behavior. Values outside of [0.1, 1.5]
-      will be clamped.
+    - [dynamic] `RopeBendAmount` (1: default, 0.1:straight, 1.5:curvy): lets
+    you change rope bending behavior. Values outside of [0.1, 1.5] will be
+    clamped.
 
-    - `SegmentTemplate` (AssetReference): template for the segments of the
-      rope. Segment Template should preferably have a height (z-axis) of 1m.
+    - `SegmentTemplate` (AssetReference): the static mesh template for the
+    segments of the rope. Segment Template should preferably have a height
+    (z-axis) of 1m.
 
-    - `CustomMaterial` (AssetReference): to override `SegmentTemplate` default
-      material.
+    - `CustomMaterial` (AssetReference): lets you override the
+    `SegmentTemplate` default material.
 
-    - `CustomizeColor` (on/off): use `CustomColor` to override default color
-      of the `SegmentTemplate`.
+    - `CustomizeColor` (on/off): lets you override the default color of the
+    `SegmentTemplate`.
 
-    - `CustomColor`(Color): if `CustomizeColor` is on will replace default
-      color of the `SegmentTemplate`.
+    - `CustomColor`(Color): if `CustomizeColor` is ticked on, this value will
+    replace default color of the `SegmentTemplate`.
 
-    - SegmentCount (default: 30): number of `SegmentTemplate` instances. The
-      client-side runtime CPU cost of dynamic rope is proportional to this
-      number (~0.01 ms/segment). For static ropes you can use a lot more.
+    - `SegmentCount` (default: 30): the number of `SegmentTemplate` instances.
+    The client-side runtime CPU cost of dynamic rope is proportional to this
+    number (~0.01 ms/segment). For static ropes you can safely use a lot more
+    than for dynamic ones.
 
-    - [dynamic] SegmentLengthFactor (1.01: default): to change the segment's
-      length. Use it to prevent visible banding or otherwise make segments
-      separate, especially if your segment template is not 1m in z-axis.
+    - [dynamic] `SegmentLengthFactor` (1.01: default): to change the segment's
+    relative length. Tweak it to prevent visible banding or in some other way
+    visually separate segments from each other, especially if your segment
+    template is not 1m in z-axis.
 
-    - [dynamic] ConeFactor (1: default): use it to change rope thickness in
-      the end point.
+    - [dynamic] `ConeFactor` (1: default): lets you change relative thickness
+    of the rope at its end point.
 
     ## [End Object Animation] section
 
-    - `EnableMovement` (default: off):
+    - [dynamic] `EnableMovement` (default: off): set to true to enable
+    procedural animation of the rope's end object.
 
-    - `DisableAngularMovement` (default: off):
+    - [dynamic] `RopeStiffness` (positive number): spring constant of the rope.
+
+    - [dynamic] `LinearDamping` (positive number): linear damping of the rope.
+
+    - `MaxStretchFactor` (default: 1.1): how much the rope stretches when it
+    behaves like a spring.
+
+    - [dynamic] `OutsideForce` (Vector3): -z: gravity; +z lift; x,y - wind.
+
+    - [dynamic] `DisableAngularMovement` (on/off): set it to true if you don't
+    want to animate the rotation of the end object.
+
+    - [dynamic] `AngularDamping` (positive number): angular damping of the end
+    object.
+
+    - [dynamic] `AngularInertia` (positive number): angular inertia of the end
+    object.
 
 ]]
 
