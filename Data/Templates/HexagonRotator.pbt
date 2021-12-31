@@ -247,5 +247,4 @@ Assets {
     }
   }
   SerializationVersion: 103
-  VirtualFolderPath: "RapidRopeDemo"
 }

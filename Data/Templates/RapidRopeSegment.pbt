@@ -1,13 +1,13 @@
 Assets {
-  Id: 11240924037368217104
-  Name: "RopeSegmentCustom"
+  Id: 3178654011926495446
+  Name: "RapidRopeSegment"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 11277947763769214097
       Objects {
         Id: 11277947763769214097
-        Name: "RopeSegment - Explosive"
+        Name: "RopeSegment"
         Transform {
           Scale {
             X: 0.03
@@ -15,12 +15,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5038339791334711975
+        ParentId: 4781671109827199097
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2241781309209464148
+              Id: 4586260309017738279
             }
           }
           Overrides {
@@ -30,9 +30,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 0.580397367
-              B: 0.00999999
+              R: 0.570000052
+              G: 0.412102491
+              B: 0.243390009
               A: 1
             }
           }
@@ -79,20 +79,10 @@ Assets {
         AssetId: "sm_cylinder_001"
       }
     }
-    Assets {
-      Id: 2241781309209464148
-      Name: "Basic Hologram"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_basic_hologram"
-      }
-    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
   SerializationVersion: 103
-  VirtualFolderPath: "RapidRopeDemo"
 }

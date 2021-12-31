@@ -5,14 +5,6 @@ Assets {
   SerializationVersion: 103
   VirtualFolderSetAsset {
     Folders {
-      VirtualFolderPath: "RapidRopeDemo"
-      PlatformAssetType: 5
-    }
-    Folders {
-      VirtualFolderPath: "RapidRope"
-      PlatformAssetType: 5
-    }
-    Folders {
       VirtualFolderPath: "RapidRope"
       PlatformAssetType: 3
     }
