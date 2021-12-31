@@ -66,6 +66,11 @@
 
 ]]
 
+-- Check for context
+if not script.isClientOnly then
+    warn(string.format("[%s]: rope script should be placed to client context.", script.id))
+end
+
 -- Container for all dynamic and static custom properties
 local PROPERTY_VALUES = script:GetCustomProperties()
 
