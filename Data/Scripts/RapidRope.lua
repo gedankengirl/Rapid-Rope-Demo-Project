@@ -66,15 +66,14 @@
 
 ]]
 
--- Check for context
+-- Check the context
 if not script.isClientOnly then
-    warn(string.format("[%s]: rope script should be placed to client context.", script.id))
+    warn(string.format("[%s]: rope script should be placed in client context.", script.id))
 end
 
 -- Container for all dynamic and static custom properties
 local PROPERTY_VALUES = script:GetCustomProperties()
 
--- Positions
 local START_OBJECT = script:GetCustomProperty("StartObject"):WaitForObject()
 local END_OBJECT = script:GetCustomProperty("EndObject"):WaitForObject()
 
@@ -105,7 +104,7 @@ end
 
 ---@see http://en.wikipedia.org/wiki/Catenary#Determining_parameters
 -- sqrt(s^2 - v^2) == 2a.sinh(H/2a)
--- For further simplifications, kudos to SketchPunk:
+-- Kudos to SketchPunk for extra simplification:
 ---@see https://gist.github.com/sketchpunk/cbfe82229234f5ccc58f6b2dd9fa98b0)
 local function  getCatenaryParameter(distance, ropeLength, maxIterations)
     maxIterations = maxIterations or MAX_ITERATIONS
@@ -132,7 +131,7 @@ local V3_ZERO = Vector3.ZERO
 local V3_UP = Vector3.UP
 local Q_ZERO = Quaternion.IDENTITY
 
--- Rope have some weight
+-- Rope has some weight
 local MIN_ROPE_FORCE_MAGNITUDE = 100
 
 -----------------------------
@@ -203,7 +202,7 @@ function Tick(dt)
             return
         end
     end
-    -- script is a parent for segments, set in to start
+    -- script is the parent of the segments, set its position to the start point
     script:SetWorldPosition(startObjectPosition)
 
     local offset = endObjectPosition - startObjectPosition
@@ -219,7 +218,7 @@ function Tick(dt)
         local ropeForce = -ropeForceSize * offset:GetNormalized()
         local acceleration = ropeForce - damping*endObjectVelocity + PROPERTY_VALUES.OutsideForce
 
-        -- update rope state state
+        -- update rope state
         endObjectVelocity = endObjectVelocity + dt*acceleration
         endObjectPosition = endObjectPosition + dt*endObjectVelocity
         offset = endObjectPosition - startObjectPosition
@@ -243,7 +242,7 @@ function Tick(dt)
             endObjectAngularVelocity = endObjectAngularVelocity + dt*angularAcceleration
             endObjectQuat = Quaternion.New(endObjectAngularVelocity, dt)*endObjectQuat
             local rotation = Rotation.New(endObjectQuat)
-            -- normalization, without it we got jitter
+            -- normalization, otherwise we can get jitter
             endObjectQuat = Quaternion.New(rotation)
             END_OBJECT:SetWorldRotation(rotation)
         end
@@ -252,11 +251,11 @@ function Tick(dt)
     -------------------------
     -- Draw rope
     -------------------------
-    -- NB. RapidRope is a client script, but animation part can be used in any
-    -- context.
+    -- NB: RapidRope is a client script, but the animation part can be used in any
+    -- context
     if CLIENT then
         local thickness = PROPERTY_VALUES.RopeThickness
-        -- NB. 5mm is near invisible in game
+        -- NB: 5mm is nearly invisible ingame
         thickness = (thickness > 0.5 and thickness or 0.5)/100
         local segmentScaleTemp = Vector3.New(thickness, thickness, 0)
         local segmentLengthFactor = PROPERTY_VALUES.SegmentLengthFactor
@@ -282,7 +281,7 @@ function Tick(dt)
             position.z = position.z - (vertex - catenary(a, i*step - offsetSize/2))
             local prevPosition = positions[i - 1]
             local deltaPos = position - prevPosition
-            -- apply segment length factor (assumes that segment mesh template
+            -- apply segment length factor (assumes that the segment's mesh template
             -- is 1m in z-axis)
             segmentScaleTemp.z = segmentLengthFactor*deltaPos.size/100
             if coneFactor ~= 1 then
@@ -292,7 +291,7 @@ function Tick(dt)
                 segmentScaleTemp.y = scaledThickness
             else
             end
-            -- NB. set whole transform is 2x faster then components
+            -- NB: setting transform as a whole is 2x faster then setting its components separately
             local segment = segments[i]
             segment:SetWorldTransform(Transform.New(Quaternion.New(V3_UP, deltaPos), prevPosition, segmentScaleTemp))
             positions[i] = position
