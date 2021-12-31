@@ -18,6 +18,9 @@ has the client CPU cost of about 0.3 ms. Ropes that are for the most part
 static (don't have `EnableMovement` property on and their ends change
 position only occasionally) have a negligible CPU cost.
 
+This pack also includes a few demo ropes. To see them, drag the
+`RAPID_ROPE_DEMO` template into the project's hierarchy.
+
 # Usage
 
 RapidRope is easy to use. Just drag `RapidRopeTemplate` to your project’s
