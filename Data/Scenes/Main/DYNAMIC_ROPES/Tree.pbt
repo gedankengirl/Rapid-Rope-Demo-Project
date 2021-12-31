@@ -378,6 +378,7 @@ Objects {
   ParentId: 7363206914571141066
   ChildIds: 15104360992854479553
   ChildIds: 10892584106875997416
+  ChildIds: 8653724114313815298
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -392,6 +393,59 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 8653724114313815298
+  Name: "World Text"
+  Transform {
+    Location {
+      X: -290.906677
+      Y: -1031.90625
+      Z: 3.7114563
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 5.46415104e-05
+      Roll: -179.999985
+    }
+    Scale {
+      X: 3.37665296
+      Y: 3.37665296
+      Z: 3.37665296
+    }
+  }
+  ParentId: 971169579946572477
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Text {
+    Text: "DYNAMIC ROPES"
+    FontAsset {
+    }
+    Color {
+      G: 1
+      B: 1
+      A: 1
+    }
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
