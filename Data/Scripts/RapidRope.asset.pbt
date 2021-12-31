@@ -130,11 +130,11 @@ Assets {
       }
       Overrides {
         Name: "cs:RopeThickness:tooltip"
-        String: "Rope thickness in cm"
+        String: "Rope thickness in cm."
       }
       Overrides {
         Name: "cs:RopeLength:tooltip"
-        String: "Rope Length in cm"
+        String: "Rope Length in cm."
       }
       Overrides {
         Name: "cs:SegmentTemplate:category"
@@ -202,7 +202,7 @@ Assets {
       }
       Overrides {
         Name: "cs:OutsideForce:tooltip"
-        String: "Gravity(-z), Lift(+z), Wind(x,y)"
+        String: "Gravity(-z), Lift(+z), Wind(x, y)."
       }
       Overrides {
         Name: "cs:LinearDamping:isrep"
@@ -246,63 +246,63 @@ Assets {
       }
       Overrides {
         Name: "cs:StartObject:tooltip"
-        String: "Start position of the  rope"
+        String: "Start point of the rope."
       }
       Overrides {
         Name: "cs:EndObject:tooltip"
-        String: "End position of the rope"
+        String: "End point of the rope."
       }
       Overrides {
         Name: "cs:SegmentTemplate:tooltip"
-        String: "Template for the segments of the rope."
+        String: "Static mesh template for the segments of the rope."
       }
       Overrides {
         Name: "cs:SegmentCount:tooltip"
-        String: "Number of segment template instances for this rope."
+        String: "Number of instances of segment templates for the rope."
       }
       Overrides {
         Name: "cs:SegmentLengthFactor:tooltip"
-        String: "Changes the relative segment\'s  length."
+        String: "Changes the relative segment\'s relative length."
       }
       Overrides {
         Name: "cs:EnableMovement:tooltip"
-        String: "EnableMovementToolTip"
+        String: "Set to true to enable procedural animation of the rope\'s end object."
       }
       Overrides {
         Name: "cs:RopeStiffness:tooltip"
-        String: "RopeStiffnessToolTip"
+        String: "Spring constant of the rope."
       }
       Overrides {
         Name: "cs:LinearDamping:tooltip"
-        String: "LinearDumpingToolTip"
+        String: "Linear damping of the rope."
       }
       Overrides {
         Name: "cs:MaxStretchFactor:tooltip"
-        String: "MAxStretchFactorToolTip"
+        String: "How much the rope stretches when it behaves like a spring."
       }
       Overrides {
         Name: "cs:DisableAngularMovement:tooltip"
-        String: "DisableAngularMovementToolTip"
+        String: "Set it to true if you don\'t want to animate the rotation of the end object."
       }
       Overrides {
         Name: "cs:AngularDamping:tooltip"
-        String: "AngularDampingToolTip"
+        String: "Angular damping of the end object."
       }
       Overrides {
         Name: "cs:AngularInertia:tooltip"
-        String: "AngularInertiaToolTip"
+        String: "Angular inertia of the end object."
       }
       Overrides {
         Name: "cs:CustomMaterial:tooltip"
-        String: "CustomMaterialToolTip"
+        String: "Lets you override the default material of the segment template."
       }
       Overrides {
         Name: "cs:CustomizeColor:tooltip"
-        String: "CustomizaColorToolTip"
+        String: "Lets you override the default color of the segment template."
       }
       Overrides {
         Name: "cs:ConeFactor:tooltip"
-        String: "ConeFactorToolTip"
+        String: "Lets you change relative thickness of the rope at its end point."
       }
     }
   }
