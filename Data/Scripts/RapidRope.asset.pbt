@@ -202,7 +202,7 @@ Assets {
       }
       Overrides {
         Name: "cs:OutsideForce:tooltip"
-        String: "Gravity(-z), Floating(+z), Wind(x,y)"
+        String: "Gravity(-z), Lift(+z), Wind(x,y)"
       }
       Overrides {
         Name: "cs:LinearDamping:isrep"
@@ -263,6 +263,46 @@ Assets {
       Overrides {
         Name: "cs:SegmentLengthFactor:tooltip"
         String: "Changes the relative segment\'s  length."
+      }
+      Overrides {
+        Name: "cs:EnableMovement:tooltip"
+        String: "EnableMovementToolTip"
+      }
+      Overrides {
+        Name: "cs:RopeStiffness:tooltip"
+        String: "RopeStiffnessToolTip"
+      }
+      Overrides {
+        Name: "cs:LinearDamping:tooltip"
+        String: "LinearDumpingToolTip"
+      }
+      Overrides {
+        Name: "cs:MaxStretchFactor:tooltip"
+        String: "MAxStretchFactorToolTip"
+      }
+      Overrides {
+        Name: "cs:DisableAngularMovement:tooltip"
+        String: "DisableAngularMovementToolTip"
+      }
+      Overrides {
+        Name: "cs:AngularDamping:tooltip"
+        String: "AngularDampingToolTip"
+      }
+      Overrides {
+        Name: "cs:AngularInertia:tooltip"
+        String: "AngularInertiaToolTip"
+      }
+      Overrides {
+        Name: "cs:CustomMaterial:tooltip"
+        String: "CustomMaterialToolTip"
+      }
+      Overrides {
+        Name: "cs:CustomizeColor:tooltip"
+        String: "CustomizaColorToolTip"
+      }
+      Overrides {
+        Name: "cs:ConeFactor:tooltip"
+        String: "ConeFactorToolTip"
       }
     }
   }
