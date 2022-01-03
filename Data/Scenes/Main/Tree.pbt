@@ -19,7 +19,7 @@ Objects {
   ChildIds: 10005074784157121906
   ChildIds: 14982843161775482339
   ChildIds: 6112336970765732724
-  ChildIds: 7204311202760110072
+  ChildIds: 2347985414847947936
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,10 +38,13 @@ Objects {
   }
 }
 Objects {
-  Id: 7204311202760110072
-  Name: "ServerContext"
+  Id: 2347985414847947936
+  Name: "ClientContext"
   Transform {
     Location {
+      X: -2032.85986
+      Y: -758.810425
+      Z: 558.469849
     }
     Rotation {
     }
@@ -52,7 +55,43 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 14336692853771372105
+  ChildIds: 3490386794261059973
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 3490386794261059973
+  Name: "Camera"
+  Transform {
+    Location {
+      Y: 104.239136
+      Z: -145.170319
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2347985414847947936
+  ChildIds: 2379868249552667939
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -63,18 +102,35 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
+    Value: "mc:eindicatorvisibility:alwaysvisible"
   }
-  NetworkContext {
-    Type: Server
+  Camera {
+    UseAsDefault: true
+    InitialDistance: 250
+    MinDistance: 300
+    MaxDistance: 600
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 70
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:lookangle"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+    DoesPositionOffsetSpring: true
+    AudioListenerOffset {
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
-  Id: 14336692853771372105
-  Name: "Invisibility"
+  Id: 2379868249552667939
+  Name: "SetCamera"
   Transform {
     Location {
     }
@@ -86,7 +142,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7204311202760110072
+  ParentId: 3490386794261059973
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -101,7 +157,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4353618353239225933
+      Id: 4828353082548610464
     }
   }
   NetworkRelevanceDistance {
@@ -121,13 +177,42 @@ Objects {
   ParentId: 4781671109827199097
   TemplateInstance {
     ParameterOverrideMap {
+      key: 1124750811928439
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1856663756772848141
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 1960155314578129872
       value {
         Overrides {
           Name: "Visible"
           Enum {
-            Value: "mc:evisibilitysetting:inheritfromparent"
+            Value: "mc:evisibilitysetting:forceoff"
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 2596634368876482339
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
         }
       }
     }
@@ -148,6 +233,24 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 4240111344471721274
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4306595305345634032
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 5176279574537117149
       value {
         Overrides {
@@ -155,6 +258,80 @@ Objects {
           Enum {
             Value: "mc:evisibilitysetting:inheritfromparent"
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5236296462366311203
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5654176733913611664
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6476949563847165717
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6778008945420107203
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7998003028735755879
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9302629362066534865
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10547573168144219784
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11468281894216857128
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
         }
       }
     }
@@ -175,8 +352,62 @@ Objects {
         Overrides {
           Name: "Visible"
           Enum {
-            Value: "mc:evisibilitysetting:inheritfromparent"
+            Value: "mc:evisibilitysetting:forceoff"
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14805926634989535314
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15235384890532594221
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16487078708185301730
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16887124008706686669
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17514414495455353419
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18083024779430085915
+      value {
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
         }
       }
     }

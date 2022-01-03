@@ -7,7 +7,7 @@ Assets {
       RootId: 11277947763769214097
       Objects {
         Id: 11277947763769214097
-        Name: "RopeSegment"
+        Name: "RapidRopeSegment"
         Transform {
           Scale {
             X: 0.03
@@ -57,6 +57,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           StaticMesh {
             Physics {
               Mass: 100

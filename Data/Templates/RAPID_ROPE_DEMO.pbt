@@ -5222,4 +5222,5 @@ Assets {
     }
   }
   SerializationVersion: 103
+  DirectlyPublished: true
 }

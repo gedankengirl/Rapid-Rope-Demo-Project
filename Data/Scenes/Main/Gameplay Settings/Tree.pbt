@@ -100,7 +100,6 @@ Objects {
     Value: "mc:eindicatorvisibility:alwaysvisible"
   }
   Camera {
-    UseAsDefault: true
     AttachToLocalPlayer: true
     InitialDistance: 400
     IsDistanceAdjustable: true
